@@ -1,0 +1,48 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build project",
+            "detail": "Build the parser",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-std=c++17",
+                "-O3",
+                "src/main.cpp",
+                "src/log/*.cpp",
+                "src/network/*.cpp",
+                "src/network/protocols/*.cpp",
+                "-o",
+                "bin/parser"
+            ],
+            "group": "build",
+            "linux": {
+                "command": "g++",
+                "problemMatcher": [
+                    "$gcc"
+                ],
+                "args": [
+                    "-fdiagnostics-color=always",
+                    "-std=c++17",
+                    "-O3",
+                    "-D",
+                    "linux",
+                    "src/main.cpp",
+                    "src/log/*.cpp",
+                    "src/network/*.cpp",
+                    "src/network/protocols/*.cpp",
+                    "-o",
+                    "bin/parser"
+                ]
+            }
+        },
+    ],
+    "version": "2.0.0"
+}

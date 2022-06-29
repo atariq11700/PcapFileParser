@@ -1,0 +1,8 @@
+*.pcap
+*.txt
+*.exe
+!data_1.pcap
+# bin/
+# test/
+# tools/
+bin/
