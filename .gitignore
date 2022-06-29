@@ -2,6 +2,7 @@
 *.txt
 *.exe
 !data_1.pcap
+!data_2.pcap
 # bin/
 # test/
 # tools/
