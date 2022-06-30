@@ -6,8 +6,7 @@
         * Type run task
         * Select the task `build project`
     2. Using g++ and the command line
-        * navigate the the project source directory
-            * assn7/
+        * navigate to the the project source directory
             * should contain the `src`, `data`, `bin`, `test`, and `tools` directories
         * run `g++ -std=c++17 -O3 -D linux src/main.cpp src/log/*.cpp src/network/*.cpp src/network/protocols/*.cpp -o bin/parser`
 2. Running
